@@ -31,3 +31,19 @@ html, body {
 *::after {
   box-sizing: border-box;
 }
+
+.hover\:underline-link::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #FFFFFF99;
+  ;
+  transition: width 0.3s ease;
+}
+
+.hover\:underline-link:hover::after {
+  width: 100%;
+}

@@ -2,10 +2,10 @@ import React from 'react'
 
 export default function Home() {
   return (
-    <section id="home" className="py-16 md:py-20 w-full flex justify-center flex-col  overflow-x-hidden min-h-max bg-gray-50 dark:bg-[#151515ff]">
+    <section id="home" className="py-16 flex flex-col justify-center align-baseline md:py-20 w-full min-h-screen overflow-x-hidden bg-gray-50 dark:bg-[#151515ff]">
       <div className="container ">
-        <div className="max-w-3xl pl-36 mx-auto text-center">
-        <div className="flex flex-col p-7 md:flex-row items-center justify-center gap-3 md:gap-3">
+        <div className="w-screen pt-10 mx-auto text-center">
+        <div className="flex justify-center p-7 md:flex-row gap-3 md:gap-3">
         <div className="relative pl-7 h-8 w-48">
           <img
             src="/hero-logo-1.svg"
@@ -23,7 +23,7 @@ export default function Home() {
           />
         </div>
       </div>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-white text-center max-w-4xl leading-tight">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-white text-center leading-tight">
         Premium Shopify
         <br />
         Themes Redefined

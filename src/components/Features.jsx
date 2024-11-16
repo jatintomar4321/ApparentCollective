@@ -2,7 +2,7 @@ import React from 'react';
 
 const FeaturedThemes = () => {
   return (
-    <section className="bg-white border-b-[0.02rem] border-gray-500 dark:bg-[#151515ff] text-black dark:text-white py-32  md:px-8 lg:px-16">
+    <section className="bg-white border-b-[0.02rem] border-gray-500 dark:bg-[#151515ff] text-black dark:text-white pt-16  md:px-8 lg:px-16">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="flex flex-col sm:flex-row justify-between items-center mb-8 sm:mb-12">
