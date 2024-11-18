@@ -72,7 +72,7 @@ export default function Navbar() {
 
             {/* Desktop Navigation Links */}
             <div className="hidden lg:flex gap-6 px-7">
-              <a href="#" className="relative text-sm hover:text-gray-900 dark:hover:text-white transition-all duration-200 hover:underline-link">Theme</a>
+              <Link to='/themes' className="relative text-sm hover:text-gray-900 dark:hover:text-white transition-all duration-200 hover:underline-link">Theme</Link>
               <Link to='/contact' className="relative text-sm hover:text-gray-900 dark:hover:text-white transition-all duration-200 hover:underline-link">Services</Link>
               <Link to='/help' className="relative text-sm hover:text-gray-900 dark:hover:text-white transition-all duration-200 hover:underline-link">Help Center</Link>
             </div>
