@@ -17,9 +17,10 @@ export default function Page() {
         <Route path="/contact" element={<ContactSection />}/>
         <Route path="/Help" element={<HelpCenter />}/>
         <Route path="/themes" element={<Themes />}/>
-
-
-        {/* Add other routes here */}
+        <Route path="/themes/modern" element={<ContactSection />} />
+        <Route path="/themes/heritage" element={<HelpCenter />} />
+        
+    {/* Add other routes here */}
       </Routes>
   
   <Footer></Footer>

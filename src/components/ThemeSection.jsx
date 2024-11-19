@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const themesData = [
   {
@@ -10,7 +11,9 @@ const themesData = [
     image: "/10.webp",
     categoryTag: "Clothing",
     date: "2024-01-15",
-    popularity: 95
+    popularity: 95,
+     learnMoreLink: "/themes/modern",
+    previewLink: "/themes/modern/preview"
   },
   {
     id: 2,
@@ -21,7 +24,9 @@ const themesData = [
     image: "/11.webp",
     categoryTag: "Jewelry & Accessories",
     date: "2024-01-20",
-    popularity: 88
+    popularity: 88,
+     learnMoreLink: "/themes/heritage",
+    previewLink: "/themes/modern/preview"
   },
   {
     id: 3,
@@ -32,7 +37,9 @@ const themesData = [
     image: "/12.webp",
     categoryTag: "Health & Beauty",
     date: "2024-02-01",
-    popularity: 92
+    popularity: 92,
+     learnMoreLink: "/themes/modern",
+    previewLink: "/themes/modern/preview"
   },
   {
     id: 4,
@@ -43,7 +50,9 @@ const themesData = [
     image: "/11.webp",
     categoryTag: "Food & Drinks",
     date: "2024-02-10",
-    popularity: 87
+    popularity: 87,
+     learnMoreLink: "/themes/modern",
+    previewLink: "/themes/modern/preview"
   },
   {
     id: 5,
@@ -54,7 +63,9 @@ const themesData = [
     image: "/12.webp",
     categoryTag: "Books, Music & Video",
     date: "2024-02-15",
-    popularity: 85
+    popularity: 85,
+    learnMoreLink: "/themes/modern",
+    previewLink: "/themes/modern/preview"
   },
   {
     id: 6,
@@ -65,7 +76,9 @@ const themesData = [
     image: "/12.webp",
     categoryTag: "Sports & Recreation",
     date: "2024-02-20",
-    popularity: 89
+    popularity: 89,
+     learnMoreLink: "/themes/modern",
+    previewLink: "/themes/modern/preview"
   },
   {
     id: 7,
@@ -76,7 +89,9 @@ const themesData = [
     image: "/13.webp",
     categoryTag: "Home & Décor",
     date: "2024-02-25",
-    popularity: 91
+    popularity: 91,
+     learnMoreLink: "/themes/modern",
+    previewLink: "/themes/modern/preview"
   },
   {
     id: 8,
@@ -87,7 +102,9 @@ const themesData = [
     image: "/10.webp",
     categoryTag: "Electronics",
     date: "2024-03-01",
-    popularity: 94
+    popularity: 94,
+     learnMoreLink: "/themes/modern",
+    previewLink: "/themes/modern/preview"
   },
   {
     id: 9,
@@ -98,7 +115,9 @@ const themesData = [
     image: "/10.webp",
     categoryTag: "Interior",
     date: "2024-03-05",
-    popularity: 90
+    popularity: 90,
+     learnMoreLink: "/themes/modern",
+    previewLink: "/themes/modern/preview"
   },
   {
     id: 10,
@@ -110,7 +129,9 @@ const themesData = [
     mobileImage: "/placeholder.svg?height=400&width=200",
     categoryTag: "Art",
     date: "2024-03-10",
-    popularity: 86
+    popularity: 86,
+     learnMoreLink: "/themes/modern",
+    previewLink: "/themes/modern/preview"
   },
   {
     id: 11,
@@ -122,7 +143,9 @@ const themesData = [
     mobileImage: "/placeholder.svg?height=400&width=200",
     categoryTag: "Clothing",
     date: "2024-03-15",
-    popularity: 88
+    popularity: 88,
+     learnMoreLink: "/themes/modern",
+    previewLink: "/themes/modern/preview"
   },
   {
     id: 12,
@@ -134,7 +157,9 @@ const themesData = [
     mobileImage: "/placeholder.svg?height=400&width=200",
     categoryTag: "Jewelry & Accessories",
     date: "2024-03-20",
-    popularity: 93
+    popularity: 93,
+     learnMoreLink: "/themes/modern",
+    previewLink: "/themes/modern/preview"
   },
   {
     id: 13,
@@ -146,7 +171,9 @@ const themesData = [
     mobileImage: "/placeholder.svg?height=400&width=200",
     categoryTag: "Health & Beauty",
     date: "2024-03-25",
-    popularity: 87
+    popularity: 87,
+    learnMoreLink: "/themes/modern",
+    previewLink: "/themes/modern/preview"
   },
   {
     id: 14,
@@ -158,7 +185,9 @@ const themesData = [
     mobileImage: "/placeholder.svg?height=400&width=200",
     categoryTag: "Food & Drinks",
     date: "2024-04-01",
-    popularity: 89
+    popularity: 89,
+     learnMoreLink: "/themes/modern",
+    previewLink: "/themes/modern/preview"
   },
   {
     id: 15,
@@ -170,7 +199,9 @@ const themesData = [
     mobileImage: "/placeholder.svg?height=400&width=200",
     categoryTag: "Electronics",
     date: "2024-04-05",
-    popularity: 92
+    popularity: 92,
+     learnMoreLink: "/themes/modern",
+    previewLink: "/themes/modern/preview"
   }
 ];
 
@@ -319,13 +350,19 @@ export default function ThemeGallery() {
                   </div>
                   <p className="text-[#FFFFFF99] text-base mb-6 mr-16 leading-relaxed">{theme.description}</p>
                   <div className="flex gap-4">
-                    <button className=" bg-white text-black px-10 py-4 rounded-3xl text-sm font-medium hover:bg-gray-100 transition-colors uppercase tracking-wide">
-                      Learn More
-                    </button>
-                    <button className=" border border-[#151515] bg-[#151515] text-white px-10 py-4 rounded-3xl text-sm font-medium hover:bg-[#252525] transition-colors uppercase tracking-wide">
-                      Preview
-                    </button>
-                  </div>
+              <Link
+                to={theme.learnMoreLink}
+                className="bg-white text-black px-10 py-4 rounded-3xl text-sm font-medium hover:bg-gray-100 transition-colors uppercase tracking-wide"
+              >
+                Learn More
+              </Link>
+              <Link
+                to={theme.previewLink}
+                className="border border-[#151515] bg-[#151515] text-white px-10 py-4 rounded-3xl text-sm font-medium hover:bg-[#252525] transition-colors uppercase tracking-wide"
+              >
+                Preview
+              </Link>
+            </div>
                 </div>
               </div>
             ))}
