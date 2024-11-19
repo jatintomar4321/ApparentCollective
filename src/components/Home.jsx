@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Home() {
   return (
-    <section id="home" className="py-16 flex flex-col justify-center align-baseline md:py-20 w-full min-h-screen overflow-x-hidden bg-gray-50 dark:bg-[#151515ff]">
+    <section id="home" className="py-16 flex flex-col justify-center align-baseline md:py-20 w-full min-h-screen overflow-x-hidden bg-[#F1F4F3] dark:bg-[#151515ff]">
       <div className="container ">
         <div className="w-screen pt-10 mx-auto text-center">
         <div className="flex justify-center p-7 md:flex-row gap-3 md:gap-3">
@@ -23,7 +23,7 @@ export default function Home() {
           />
         </div>
       </div>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-white text-center leading-tight">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium dark:text-white text-[#292929] text-center leading-tight">
         Premium Shopify
         <br />
         Themes Redefined
@@ -31,7 +31,7 @@ export default function Home() {
           
         <div className="flex p-8  flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
         <button 
-          className="bg-white text-black hover:bg-gray-100 rounded-full px-7 py-5 text-sm font-thin transition-all duration-300 ease-in-out group"
+          className="bg-[#272727] text-white font-semibold dark:bg-white dark:text-[#1E1E1E] rounded-full px-7 py-5 text-sm transition-all duration-300 ease-in-out group"
         >
           <span className="flex items-center">
             DISCOVER THEMES
@@ -51,9 +51,9 @@ export default function Home() {
           </span>
         </button>
         <button 
-          className="text-white border-1 border-white hover:bg-white/10 rounded-full px-7 py-5 text-sm font-thin transition-all duration-300 ease-in-out group"
+          className="text-white border-1 bg-[#EDEDED] dark:bg-[#272727] border-white hover:bg-white/10 rounded-full px-7 py-5 text-sm font-semibold transition-all duration-300 ease-in-out group"
         >
-          <span className="flex items-center">
+          <span className="flex dark:text-white text-[#292929] items-center">
             LEARN MORE
             <svg 
               xmlns="http://www.w3.org/2000/svg" 

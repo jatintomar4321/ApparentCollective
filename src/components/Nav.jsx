@@ -29,7 +29,7 @@ export default function Navbar() {
   }, [darkMode]);
 
   return (
-    <nav className="bg-background pt-10 px-12 text-text dark:bg-[#151515ff] Background dark:text-darkText shadow-md">
+    <nav className="bg-[#F1F4F3] pt-10 px-12 text-text dark:bg-[#151515ff] Background dark:text-darkText shadow-md">
       <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-0">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">

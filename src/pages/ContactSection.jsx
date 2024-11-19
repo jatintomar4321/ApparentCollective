@@ -37,7 +37,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="bg-[#151515ff] text-white py-20 md:py-24 px-4 md:px-6 lg:px-10">
+    <section className="bg: white dark:bg-[#151515ff] text-white py-20 md:py-24 px-4 md:px-6 lg:px-10">
       <div className="flex pb-6 mx-auto md:pl-6 px-16 lg:pl-10 text-sm">
         <a href="#" className="text-[#a1a0a0] underline underline-offset-2">Home</a>
         <IoMdArrowDropright className="text-white w-5 h-5" />
@@ -129,7 +129,7 @@ const ContactSection = () => {
                   value={formData.request}
                   onChange={handleInputChange}
                   rows={6}
-                  className="w-full bg-[#151515ff] rounded-lg border border-[#FFFFFF99] px-4 py-3 placeholder-[#FFFFFF99] focus:outline-none focus:border-white transition-colors"
+                  className="w-full bg: white dark:bg-[#151515ff] rounded-lg border border-[#FFFFFF99] px-4 py-3 placeholder-[#FFFFFF99] focus:outline-none focus:border-white transition-colors"
                   required
                 />
               </div>

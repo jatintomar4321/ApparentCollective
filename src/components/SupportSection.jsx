@@ -1,10 +1,10 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
 export default function SupportSection() {
   const [showForm, setShowForm] = useState(false)
   const [theme, setTheme] = useState("")
     return (
-      <div className="min-h-screen bg-[#151515ff] text-white box-border pb-36 pt-16">
+      <div className="min-h-screen bg-white dark:bg-[#151515ff] text-white box-border pb-36 pt-16">
         <div className="max-w-7xl mx-auto space-y-12">
           <div className="space-y-4">
             <h1 className="text-5xl font-medium tracking-tight">Support</h1>
