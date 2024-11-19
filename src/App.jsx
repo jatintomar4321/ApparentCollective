@@ -6,6 +6,7 @@ import { Routes, Route } from 'react-router-dom'
 import HelpCenter from './pages/HelpCenter'
 import Footer from './components/Footer'
 import Themes from './pages/Themes'
+import BerlinHero from './components/BerlinHero'
 
 export default function Page() {
   return (
@@ -17,7 +18,7 @@ export default function Page() {
         <Route path="/contact" element={<ContactSection />}/>
         <Route path="/Help" element={<HelpCenter />}/>
         <Route path="/themes" element={<Themes />}/>
-        <Route path="/themes/modern" element={<ContactSection />} />
+        <Route path="/themes/modern" element={<BerlinHero />} />
         <Route path="/themes/heritage" element={<HelpCenter />} />
         
     {/* Add other routes here */}
