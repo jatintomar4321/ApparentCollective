@@ -71,7 +71,7 @@ const BerlinAbout = () => {
                 alt="Setup Preview"
                 className="w-full h-auto rounded-lg mb-6"
               />
-              <h2 className="text-2xl font-medium leading-tight">
+              <h2 className="text-5xl font-medium leading-tight">
                 Simple
                 <br />
                 & Quick Setup
